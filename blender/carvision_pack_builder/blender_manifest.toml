@@ -1,0 +1,19 @@
+schema_version = "1.0.0"
+
+id = "carvision_pack_builder"
+version = "0.1.0"
+name = "CarVision Pack Builder"
+tagline = "Convierte el modelo 3D de tu coche en un pack para la app CarVision"
+maintainer = "CarVision"
+type = "add-on"
+
+blender_version_min = "4.2.0"
+
+# Los complementos de Blender usan su API (GPL): GPL-3.0-or-later, confirmado por el cliente (DECISIONS.md, D-025).
+# Afecta solo a este complemento, no a la app CarVision.
+license = ["SPDX:GPL-3.0-or-later"]
+
+tags = ["Import-Export", "3D View"]
+
+[permissions]
+files = "Leer el modelo 3D y el logotipo elegidos y escribir el pack (.zip) en la carpeta de salida"

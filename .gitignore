@@ -1,0 +1,46 @@
+# Material de la competencia: solo estudio, nunca se versiona ni se distribuye.
+referencia/
+docs/ANALISIS_RD_V129.md
+docs/ANALISIS_REFERENCIAS.md
+
+# Archivos de Blender temporales y resultados intermedios del pipeline
+*.blend1
+vehicle-packs/*/work/
+vehicle-packs/*/source/work/
+vehicle-packs/*/source/original/
+vehicle-packs/*/*.zip
+vehicle-packs/*/source/*.zip
+blender/samples/test_models/
+catalogo_fuentes/
+
+# Compilados y descargas (la APK va en las Releases de GitHub, no en el repositorio)
+dist/
+web/private/
+web/.vercel/
+web/.env*.local
+*.apk
+*.aab
+
+# Claves y configuración local: nunca en el repositorio
+*.jks
+*.keystore
+keystore.properties
+local.properties
+.env
+.env.*
+!.env.example
+
+# Material de marketing aún sin publicar y vídeos pesados
+docs/marketing/
+docs/capturas/**/*.mp4
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# Configuración local de Claude Code
+.claude/

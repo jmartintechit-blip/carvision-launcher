@@ -1,0 +1,128 @@
+{
+  "formatVersion": 1,
+  "id": "carvision_default",
+  "name": "Coche por defecto",
+  "version": "1.0.0",
+  "vehicle": {
+    "make": "CarVision",
+    "model": "",
+    "generation": "Compacto 5 puertas",
+    "bodyStyle": "hatchback",
+    "doors": 5
+  },
+  "model": {
+    "file": "model.glb",
+    "rootNode": "car_root",
+    "forwardYawDeg": 0
+  },
+  "parts": [
+    {
+      "id": "front_left_door",
+      "node": "front_left_door",
+      "signal": "door.front_left",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "openAngleDeg": -62,
+      "durationMs": 800
+    },
+    {
+      "id": "front_right_door",
+      "node": "front_right_door",
+      "signal": "door.front_right",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "openAngleDeg": 62,
+      "durationMs": 800
+    },
+    {
+      "id": "rear_left_door",
+      "node": "rear_left_door",
+      "signal": "door.rear_left",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "openAngleDeg": -64,
+      "durationMs": 800
+    },
+    {
+      "id": "rear_right_door",
+      "node": "rear_right_door",
+      "signal": "door.rear_right",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "openAngleDeg": 64,
+      "durationMs": 800
+    },
+    {
+      "id": "rear_hatch",
+      "node": "rear_hatch",
+      "signal": "tailgate",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "openAngleDeg": 80,
+      "durationMs": 1200
+    },
+    {
+      "id": "hood",
+      "node": "hood",
+      "signal": "hood",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "openAngleDeg": -48,
+      "durationMs": 1100
+    }
+  ],
+  "wheels": [
+    {
+      "node": "front_left_wheel",
+      "radiusM": 0.331
+    },
+    {
+      "node": "front_right_wheel",
+      "radiusM": 0.331
+    },
+    {
+      "node": "rear_left_wheel",
+      "radiusM": 0.331
+    },
+    {
+      "node": "rear_right_wheel",
+      "radiusM": 0.331
+    }
+  ],
+  "camera": {
+    "homeYawDeg": 40,
+    "homePitchDeg": 14,
+    "minPitchDeg": 3,
+    "maxPitchDeg": 55,
+    "fovDeg": 28,
+    "zoom": 1.0
+  },
+  "brand": {
+    "name": "CarVision"
+  },
+  "license": {
+    "model": "CC-BY-4.0",
+    "author": "savelliy07",
+    "source": "https://sketchfab.com/3d-models/9a4b0859a3484e2ebfbc9eb54537b5eb",
+    "attribution": "\"Ford Focus ST (MK3)\" de savelliy07 (Sketchfab), CC BY 4.0. Modificado por CarVision: emblemas e insignias de la marca eliminados, piezas móviles separadas, bisagras, guarnecidos interiores de puerta, materiales y escala.",
+    "commercialRedistribution": true
+  }
+}

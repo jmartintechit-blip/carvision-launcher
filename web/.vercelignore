@@ -1,0 +1,6 @@
+# Lo que NO se sube a Vercel al publicar con la CLI. Ojo: web/private (APK, coches, código) SÍ se sube: son las
+# descargas del Área de cliente (están fuera de Git por .gitignore, por eso se publica con la CLI y no desde Git).
+node_modules
+.next
+.env*.local
+tsconfig.tsbuildinfo

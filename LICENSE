@@ -1,0 +1,26 @@
+Copyright (c) 2026 Juan Antonio Martín Nadales. Todos los derechos reservados / All rights reserved.
+
+ES
+Este repositorio se publica únicamente para que su código pueda consultarse (portfolio). No se concede ninguna
+licencia de uso: sin permiso previo y por escrito del titular no está permitido copiar, modificar, distribuir,
+sublicenciar, vender ni usar este software ni partes de él, ni en proyectos personales ni comerciales. Ver el código en
+GitHub y hacer un fork dentro de GitHub se permiten solo en la medida en que lo exigen los Términos de Servicio de
+GitHub.
+
+Quedan fuera de este aviso los componentes de terceros listados en THIRD_PARTY_NOTICES.md, que se rigen por sus
+propias licencias (por ejemplo, los modelos 3D bajo CC BY 4.0), y el add-on de Blender de la carpeta
+blender/carvision_pack_builder/, que se publica bajo GNU GPL v3 (blender/carvision_pack_builder/LICENSE.txt), como
+exige Blender para sus add-ons.
+
+EN
+This repository is published for viewing only (portfolio). No licence is granted: without the copyright holder's prior
+written permission you may not copy, modify, distribute, sublicense, sell or use this software or any part of it, in
+personal or commercial projects. Viewing the code on GitHub and forking it within GitHub are allowed only to the
+extent required by the GitHub Terms of Service.
+
+Third-party components listed in THIRD_PARTY_NOTICES.md are excluded from this notice and are governed by their own
+licences (for example, the 3D models under CC BY 4.0), and so is the Blender add-on in
+blender/carvision_pack_builder/, which is released under the GNU GPL v3 (blender/carvision_pack_builder/LICENSE.txt),
+as Blender requires for add-ons.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.

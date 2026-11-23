@@ -1,0 +1,28 @@
+{
+  "input": "mi_coche/modelo.glb",
+  "output_dir": "mi_coche/salida",
+
+  "make": "Seat",
+  "model": "León",
+  "generation": "MK1 (1999-2005)",
+  "body_style": "hatchback",
+  "doors": 5,
+  "length_m": 4.18,
+  "paint_color": "#B3B7BC",
+  "logo": "mi_coche/logo.png",
+
+  "license": {
+    "model": "CC-BY-4.0",
+    "author": "Nombre del autor del modelo 3D",
+    "source": "https://enlace-a-la-pagina-del-modelo",
+    "attribution": "\"Nombre del modelo\" de Autor, CC BY 4.0. Modificado con el generador de CarVision.",
+    "commercial": true
+  },
+
+  "flip_front": false,
+  "hinges": {},
+  "angles": {},
+  "assign": {},
+  "max_tris": 300000,
+  "previews": true
+}

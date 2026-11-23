@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fondo oscuro desde el primer fotograma: evita el destello blanco al arrancar. -->
+    <style name="Theme.CarVision" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/cv_boot_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/cv_boot_background</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+    <color name="cv_boot_background">#FF05070A</color>
+</resources>

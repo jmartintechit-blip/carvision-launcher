@@ -1,0 +1,26 @@
+{
+ "input": "original/golf6_car2022.glb",
+ "output_dir": "work/out",
+ "id": "vw_golf_6_5p",
+ "make": "Volkswagen",
+ "model": "Golf",
+ "generation": "VI (2008-2012)",
+ "body_style": "hatchback",
+ "doors": 5,
+ "length_m": 4.199,
+ "keep_materials": true,
+ "previews": false,
+ "license": {
+  "model": "CC-BY-4.0",
+  "author": "Car2022",
+  "source": "https://sketchfab.com/3d-models/8d8a301cee5143e9a6f25519e32dde21",
+  "attribution": "\"Volkswagen Golf 6. (A6)\" de Car2022 (Sketchfab), CC BY 4.0. Modificado por CarVision: piezas móviles separadas, bisagras, guarnecidos de puerta, limpieza y escala.",
+  "commercial": true
+ },
+ "remove": [
+  "mechanical_rally-material.005"
+ ],
+ "finish": "finish_golf6.py",
+ "name": "Volkswagen Golf VI 5 puertas",
+ "logo": "../brand/logo.png"
+}

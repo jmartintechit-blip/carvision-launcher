@@ -1,0 +1,26 @@
+{
+ "input": "original/corsa_d_merc_tv.glb",
+ "output_dir": "work/out",
+ "id": "opel_corsa_d_5p",
+ "name": "Opel Corsa D 5 puertas",
+ "make": "Opel",
+ "model": "Corsa",
+ "generation": "D (2006-2014)",
+ "body_style": "hatchback",
+ "doors": 5,
+ "length_m": 3.999,
+ "logo": "../brand/logo.png",
+ "keep_materials": true,
+ "previews": false,
+ "license": {
+  "model": "CC-BY-4.0",
+  "author": "Merc_TV",
+  "source": "https://sketchfab.com/3d-models/82d1344bfa0d481da9c5a7db5a6c6752",
+  "attribution": "\"Opel Corsa 5-door D 2006-2014\" de Merc_TV (Sketchfab), CC BY 4.0. Modificado por CarVision: piezas móviles separadas, bisagras, materiales, limpieza y escala.",
+  "commercial": true
+ },
+ "finish": "finish_corsa_d.py",
+ "remove": [
+  "glass_invisible"
+ ]
+}

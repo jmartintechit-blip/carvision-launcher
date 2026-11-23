@@ -1,0 +1,46 @@
+{
+  "formatVersion": 1,
+  "id": "demo_hatchback",
+  "name": "Coche de prueba CarVision",
+  "version": "0.1.0",
+  "vehicle": {
+    "make": "CarVision",
+    "model": "Coche de prueba",
+    "generation": null,
+    "bodyStyle": "hatchback",
+    "doors": 5
+  },
+  "model": {
+    "file": "model.glb",
+    "rootNode": "car_root",
+    "forwardYawDeg": 0
+  },
+  "parts": [
+    { "id": "front_left_door",  "node": "front_left_door",  "signal": "door.front_left",  "axis": [0, 1, 0], "openAngleDeg": -64, "durationMs": 750 },
+    { "id": "front_right_door", "node": "front_right_door", "signal": "door.front_right", "axis": [0, 1, 0], "openAngleDeg": 64,  "durationMs": 750 },
+    { "id": "rear_left_door",   "node": "rear_left_door",   "signal": "door.rear_left",   "axis": [0, 1, 0], "openAngleDeg": -62, "durationMs": 750 },
+    { "id": "rear_right_door",  "node": "rear_right_door",  "signal": "door.rear_right",  "axis": [0, 1, 0], "openAngleDeg": 62,  "durationMs": 750 },
+    { "id": "rear_hatch",       "node": "rear_hatch",       "signal": "tailgate",         "axis": [1, 0, 0], "openAngleDeg": 78,  "durationMs": 1100 }
+  ],
+  "wheels": [
+    { "node": "front_left_wheel", "radiusM": 0.32 },
+    { "node": "front_right_wheel", "radiusM": 0.32 },
+    { "node": "rear_left_wheel", "radiusM": 0.32 },
+    { "node": "rear_right_wheel", "radiusM": 0.32 }
+  ],
+  "camera": {
+    "homeYawDeg": 38,
+    "homePitchDeg": 15,
+    "minPitchDeg": 4,
+    "maxPitchDeg": 55,
+    "fovDeg": 28,
+    "zoom": 1.0
+  },
+  "license": {
+    "model": "CC0-1.0",
+    "author": "Proyecto CarVision",
+    "source": "Generado con blender/scripts/make_demo_hatchback.py",
+    "attribution": "Coche de prueba generado por CarVision. No representa ningún vehículo real.",
+    "commercialRedistribution": true
+  }
+}

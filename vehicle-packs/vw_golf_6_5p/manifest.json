@@ -1,0 +1,132 @@
+{
+  "formatVersion": 1,
+  "id": "vw_golf_6_5p",
+  "name": "Volkswagen Golf VI 5 puertas",
+  "version": "1.0.0",
+  "vehicle": {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "generation": "VI (2008-2012)",
+    "bodyStyle": "hatchback",
+    "doors": 5
+  },
+  "model": {
+    "file": "model.glb",
+    "rootNode": "car_root",
+    "forwardYawDeg": 0
+  },
+  "parts": [
+    {
+      "id": "front_left_door",
+      "node": "front_left_door",
+      "signal": "door.front_left",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "openAngleDeg": -62.0,
+      "durationMs": 800
+    },
+    {
+      "id": "front_right_door",
+      "node": "front_right_door",
+      "signal": "door.front_right",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "openAngleDeg": 62.0,
+      "durationMs": 800
+    },
+    {
+      "id": "rear_left_door",
+      "node": "rear_left_door",
+      "signal": "door.rear_left",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "openAngleDeg": -62.0,
+      "durationMs": 800
+    },
+    {
+      "id": "rear_right_door",
+      "node": "rear_right_door",
+      "signal": "door.rear_right",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "openAngleDeg": 62.0,
+      "durationMs": 800
+    },
+    {
+      "id": "hood",
+      "node": "hood",
+      "signal": "hood",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "openAngleDeg": -48.0,
+      "durationMs": 1100
+    },
+    {
+      "id": "rear_hatch",
+      "node": "rear_hatch",
+      "signal": "tailgate",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "openAngleDeg": 80.0,
+      "durationMs": 1200
+    }
+  ],
+  "wheels": [
+    {
+      "node": "front_left_wheel",
+      "radiusM": 0.307
+    },
+    {
+      "node": "front_right_wheel",
+      "radiusM": 0.307
+    },
+    {
+      "node": "rear_left_wheel",
+      "radiusM": 0.307
+    },
+    {
+      "node": "rear_right_wheel",
+      "radiusM": 0.307
+    }
+  ],
+  "camera": {
+    "homeYawDeg": 40,
+    "homePitchDeg": 14,
+    "minPitchDeg": 3,
+    "maxPitchDeg": 55,
+    "fovDeg": 28,
+    "zoom": 1.0
+  },
+  "brand": {
+    "name": "Volkswagen",
+    "logo": "brand/logo.png"
+  },
+  "paint": {
+    "material": "paint"
+  },
+  "license": {
+    "model": "CC-BY-4.0",
+    "author": "Car2022",
+    "source": "https://sketchfab.com/3d-models/8d8a301cee5143e9a6f25519e32dde21",
+    "attribution": "\"Volkswagen Golf 6. (A6)\" de Car2022 (Sketchfab), CC BY 4.0. Modificado por CarVision: piezas móviles separadas, bisagras, guarnecidos de puerta, limpieza y escala.",
+    "commercialRedistribution": true
+  }
+}
