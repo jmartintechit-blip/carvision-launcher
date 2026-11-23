@@ -69,6 +69,10 @@ class CarRenderer(private val context: Context) {
         private const val SHADOW_NODE = "contact_shadow"
     }
 
+    /** Radio con poca memoria (1 GB / Android Go): sin MSAA y a ~30 fps mientras algo se mueve. */
+    val lowMemory: Boolean = DeviceProfile.isLowMemory(context)
+    private var lastRenderNanos = 0L
+
     private val engine: Engine = Engine.create()
     private val renderer: Renderer = engine.createRenderer()
     private val scene: Scene = engine.createScene()
@@ -165,8 +169,9 @@ class CarRenderer(private val context: Context) {
         view.camera = camera
         view.blendMode = View.BlendMode.TRANSLUCENT
         view.antiAliasing = View.AntiAliasing.FXAA
+        // MSAA 4x cuesta ~4 veces la memoria del fotograma; en las radios de 1 GB basta con FXAA.
         view.multiSampleAntiAliasingOptions = view.multiSampleAntiAliasingOptions.apply {
-            enabled = true
+            enabled = !lowMemory
             sampleCount = 4
         }
         renderer.clearOptions = renderer.clearOptions.apply {
@@ -494,7 +499,10 @@ class CarRenderer(private val context: Context) {
         // Hasta confirmar que el coche se ha dibujado, se sigue intentando aunque no se mueva nada.
         animating = animating || (carAsset != null && !shownReported)
 
-        if (dirty || animating) {
+        // Modo ligero: mientras algo se mueve se dibuja como mucho cada ~30 ms (la animación sigue su tiempo real).
+        val throttled = lowMemory && lastRenderNanos != 0L && frameTimeNanos - lastRenderNanos < 30_000_000L
+        if ((dirty || animating) && !throttled) {
+            lastRenderNanos = frameTimeNanos
             applyCamera()
             val sc = swapChain
             val ok = sc != null && uiHelper.isReadyToRender && renderer.beginFrame(sc, frameTimeNanos)
@@ -515,6 +523,7 @@ class CarRenderer(private val context: Context) {
             choreographer.postFrameCallback(frameCallback)
         } else {
             lastFrameNanos = 0L
+            lastRenderNanos = 0L
         }
     }
 

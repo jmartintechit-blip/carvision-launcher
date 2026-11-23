@@ -64,6 +64,10 @@ adb shell cmd notification allow_listener com.carvision.launcher/com.carvision.l
 
 CarVision solo lee qué se está reproduciendo; no lee ni guarda el contenido de las notificaciones.
 
+**Radios con Android Go** (muchas de 1 GB): Android no ofrece ese ajuste. La tarjeta de música abre la app de música al
+tocarla; para ver la carátula hay que probar el comando `adb` de arriba. Plan de prueba en una radio así:
+`docs/PRUEBA_RADIO_FOCUS.md`.
+
 ## 6. Primeros ajustes recomendados
 
 | Dónde | Qué |

@@ -4,6 +4,16 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). V
 
 ## [Sin publicar]
 
+### 1.0.1 (2026-11-23) — preparada para radios de 1 GB
+- **Modo ligero automático** en radios Android Go o con menos de ~1,6 GB de RAM (como la del Focus: Allwinner A133,
+  1 GB, Android 10 Go): el 3D sin MSAA (solo FXAA) y como mucho a ~30 fps mientras algo se mueve. Probado en emulador
+  con 1,5 GB: arranque, coche, puertas y capó correctos.
+- **Música en Android Go:** Ajustes no deja conceder el acceso a notificaciones; la tarjeta abre la app de música en vez
+  de quedarse pidiendo un permiso imposible.
+- Plan de la primera prueba en radio real: `docs/PRUEBA_RADIO_FOCUS.md`.
+- Repositorio público en GitHub (portfolio, todos los derechos reservados) con la release 1.0.0; los datos del titular
+  de las páginas legales salen del entorno (`LEGAL_NAME`, `LEGAL_NIF`, `LEGAL_ADDRESS`) y no del código.
+
 ### Añadido (preparación del lanzamiento v1, 2026-11-14)
 - **Web de prueba publicada** (2026-11-20) en https://carvisiones.vercel.app, sin dominio propio ni pagos activos.
 - **App 1.0.0** (`versionCode` 100) en `dist/CarVision.apk`, probada en el emulador. Firmada todavía con la clave de

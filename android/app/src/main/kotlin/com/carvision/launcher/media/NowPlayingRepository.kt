@@ -12,6 +12,7 @@ import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
 import androidx.core.app.NotificationManagerCompat
+import com.carvision.render3d.DeviceProfile
 import androidx.core.graphics.drawable.toBitmap
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -74,7 +75,9 @@ class NowPlayingRepository(private val context: Context) {
     fun start() {
         if (!hasPermission()) {
             stopInternal()
-            state.value = MediaState.NoPermission
+            // En Android Go, Ajustes no permite conceder este acceso: la tarjeta abre la app de música sin más
+            // (se puede conceder por adb: docs/INSTALACION.md).
+            state.value = if (DeviceProfile.isAndroidGo(context)) MediaState.Idle else MediaState.NoPermission
             return
         }
         if (started) {

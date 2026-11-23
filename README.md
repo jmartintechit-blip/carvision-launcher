@@ -99,6 +99,7 @@ Web: `cd web && npm install && npm run dev` (http://localhost:3100; variables en
 | [`docs/BLENDER_PIPELINE.md`](docs/BLENDER_PIPELINE.md) | Preparar un modelo 3D en Blender |
 | [`docs/CREAR_MI_COCHE.md`](docs/CREAR_MI_COCHE.md) | Poner tu coche con el panel de Blender |
 | [`docs/RADIOS.md`](docs/RADIOS.md) | Radios Android compatibles y requisitos |
+| [`docs/PRUEBA_RADIO_FOCUS.md`](docs/PRUEBA_RADIO_FOCUS.md) | Plan de la primera prueba en una radio real (1 GB, Android 10 Go) |
 | [`docs/WEB.md`](docs/WEB.md) | La tienda web |
 
 ## Licencia y créditos
