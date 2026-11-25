@@ -11,6 +11,9 @@ Recibido el 2026-11-12. Pendiente de usar en la etapa 4 de `docs/HOJA_DE_RUTA.md
 
 ## Ford Focus
 
+- Coche: **Ford Focus MK2 de 5 puertas** (el de la hermana del cliente). En la app se usa por ahora el pack del
+  **Focus MK3**: en Sketchfab no hay ningún MK2 de 5 puertas gratis y con calidad (2026-11-25: los buenos son de
+  3 puertas, ST/RS, y el mejor es CC BY-NC-SA). Pendiente: comprar un modelo MK2 5p o adaptar uno.
 - Marca / firmware: **NWD** (fabricante chino genérico).
 - Modelo: **K2401** (build `K2401_NWD_S212802`, mayo de 2025).
 - Chip: **Allwinner A133**.
